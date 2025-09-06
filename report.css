@@ -1,0 +1,107 @@
+/* ===== Reset ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* ===== Report Form Container ===== */
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+h1 { font-size: 2rem; margin-bottom: 10px; }
+.subtitle { color: #555; margin-bottom: 20px; }
+
+form label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: 600;
+}
+
+form input, form textarea, form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus, form select:focus {
+  border-color: #1E90FF;
+  outline: none;
+}
+
+form textarea { resize: vertical; }
+
+/* ===== Upload Box ===== */
+.upload-box {
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.upload-box.dragover {
+  border-color: #1E90FF;
+  background: #f0f8ff;
+}
+
+.upload-box input[type="file"] { display: none; }
+
+.upload-link {
+  color: #1E90FF;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#preview img {
+  max-width: 100px;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+
+/* ===== Submit Button ===== */
+.submit-btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #1E90FF;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #1a75d1;
+}
+
+/* ===== Footer ===== */
+footer {
+  padding: 1.5rem;
+  text-align: center;
+  background: #fff;
+  color: #555;
+  border-top: 1px solid #eee;
+  margin-top: auto;
+  font-size: 14px;
+}

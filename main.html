@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CivicReport</title>
+  <link rel="stylesheet" href="main.css">
+  <script defer src="main.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Civic<span>Report</span></div>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#quotes">Quotes</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#how"onclick="window.location.href='display.html'" >News</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
+      <div class="toggle-theme" id="themeToggle">🌙</div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1>Report. Resolve. Revive.</h1>
+      <p>Your voice matters. Report issues in your community and track their resolution.</p>
+      <button class="cta-btn" onclick="window.location.href='report.html'">
+        Report a Problem
+      </button>
+
+      <!-- Supporting Text -->
+      <div class="hero-subtext">
+        <h2>Together, we can build stronger communities</h2>
+        <p>
+          CivicReport empowers citizens to take action, highlight problems, and
+          collaborate with local authorities for faster solutions.
+        </p>
+      </div>
+
+      <!-- Stats Row -->
+      <div class="stats-row">
+        <div class="stat-box">
+          <h3>500+</h3>
+          <p>Problems Solved</p>
+        </div>
+        <div class="stat-box">
+          <h3>100+</h3>
+          <p>Communities Engaged</p>
+        </div>
+        <div class="stat-box">
+          <h3>24/7</h3>
+          <p>Citizen Support</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- How It Works -->
+  <section class="how-it-works" id="how">
+    <h2>How It Works</h2>
+    <p class="subtitle">Simple steps to a better community</p>
+    <div class="cards">
+      <div class="card">
+        <div class="icon">📢</div>
+        <h3>Report</h3>
+        <p>Quickly report issues like potholes, garbage, or streetlights with ease.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🔍</div>
+        <h3>Track</h3>
+        <p>Follow updates in real-time and stay informed about solutions.</p>
+      </div>
+      <div class="card">
+        <div class="icon">✔️</div>
+        <h3>Resolve</h3>
+        <p>Watch your neighborhood improve as problems get fixed.</p>
+      </div>
+    </div>
+  </section>
+    <!-- Quotes -->
+  <section class="quotes" id="quotes">
+    <h2>Inspiring Quotes</h2>
+    <p class="subtitle">Voices that spark change</p>
+    <div class="quotes-grid">
+      <div class="quote-card">“Cleanliness is the first step toward a civilized society.”</div>
+      <div class="quote-card">"Never doubt that a small group of thoughtful, committed citizens can change the world." – Margaret Mead</div>
+      <div class="quote-card">"Be the change that you wish to see in the world." – Mahatma Gandhi</div>
+      <div class="quote-card">"Act as if what you do makes a difference. It does." – William James</div>
+      <div class="quote-card">"The power of the people is stronger than the people in power." – Wael Ghonim</div>
+      <div class="quote-card">"Alone we can do so little; together we can do so much." – Helen Keller</div>
+      <div class="quote-card">"The time is always right to do what is right." – Martin Luther King Jr.</div>
+      <div class="quote-card">"Every action counts, no matter how small." – Anonymous</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 CivicReport. Built for a better community 🌍</p>
+  </footer>
+</body>
+</html>

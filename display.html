@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CivicReport</title>
+  <link rel="stylesheet" href="display.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Civic<span>Report</span></div>
+    <nav>
+      <ul>
+        <li><a href="#">Notices</a></li>
+        <li><a href="#">Media</a></li>
+        <li><a href="#" id="awareness-link">Awareness</a></li>
+      </ul>
+    </nav>
+    <div class="profile">👩</div>
+  </header>
+
+  <!-- Layout -->
+  <main class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul>
+        <li class="active">Notices</li>
+        <li>Media</li>
+        <li>Awareness</li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <section class="content">
+      <!-- Featured Notices -->
+      <h2>Featured Notices</h2>
+      <div class="notices">
+        <div class="notice-card">
+          <div class="notice-info">
+            <h3>💧 Water Leak in Sector 15</h3>
+            <p>A major water pipe has burst, leading to waterlogging. Residents are advised to store water. Repair work is underway.</p>
+            <small>Reported 2023-08-15 • <span class="status active">Active</span></small>
+          </div>
+          <img src="https://imgs.search.brave.com/CoR4SBYPv14rjcf8-DWjBNTUA1PzT4DpooeoPqnP_Q0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzEyLzkyLzg1LzE5/LzM2MF9GXzEyOTI4/NTE5MDdfUXY1UzRQ/N0hIalZ4VGlPSUNO/QWdOcEZvWmtMYzI2/TFAuanBn" alt="Water Leak">
+        </div>
+
+        <div class="notice-card">
+          <div class="notice-info">
+            <h3>⚠️ Road Damage on Main Street</h3>
+            <p>The heavy rains caused potholes on Main Street. The road has been repaired and is now safe for traffic.</p>
+            <small>Reported 2023-07-22 • <span class="status resolved">Resolved</span></small>
+          </div>
+          <img src="https://imgs.search.brave.com/lQ01pmRcjyMouaRO373HAJ4vrP7mmnRi1MeKrx8SduE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi93YXRl/ci1kYW1hZ2VkLXBv/dGhvbGVzLXJvYWQt/cGFydC1yb2Fkcy1w/aXRzLTc5OTAxODM0/LmpwZw" alt="Road Damage">
+        </div>
+
+        <div class="notice-card">
+          <div class="notice-info">
+            <h3>💡 Streetlight Outage in Block C</h3>
+            <p>Multiple streetlights are non-functional, causing safety concerns. The issue is being looked into.</p>
+            <small>Reported 2023-06-10 • <span class="status active">Active</span></small>
+          </div>
+          <img src="https://imgs.search.brave.com/rhnSG3XBqh6tAG3om4LUtK_B0uDfob89fu_cWh7Yiz0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNjU1/Mjc4MjQ4L3Bob3Rv/L2Jyb2tlbi1zdHJl/ZXRsaWdodC5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9YlJV/TnhDMGRTU0thTE1T/R1lYam90dVNsOVZq/SFJGWnlXMTVMdGJL/aGx4MD0" alt="Streetlight Outage">
+        </div>
+      </div>
+
+      <!-- Gallery -->
+      <h2>Improvement Gallery</h2>
+      <div class="gallery">
+        <div class="gallery-card">
+          <img src="https://imgs.search.brave.com/2AVq-LAkC1mUDPw_ZOT5teIQw0o2p_r_9WnhvMWW4yU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jb21t/b253ZWFsdGhwYXZp/bmcubmV0L3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIxLzAzL3Bv/dGhvbGUtcmVwYWly/LWxvdWlzdmlsbGUu/anBn" alt="Pothole Repair">
+          <p>Pothole Repair - Sector 10<br><small>Resolved 2023-09-05</small></p>
+        </div>
+        <div class="gallery-card">
+          <img src="https://imgs.search.brave.com/RoSSH7QskK9CWY43drTdyRzSfZDAig-h74QZfMvcjsg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTA3/NzE1NjI5MC9waG90/by9wZW9wbGUtY2xl/YW5pbmctdGhlLWVu/dmlyb25tZW50Lmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1Y/blo3RGRaOVhvOHI0/cmZDV2ljQVhuU3JG/M1FxR201OE1GTWlk/TS0yejlBPQ" alt="Garbage Cleanup">
+          <p>Garbage Cleanup - Park Avenue<br><small>Resolved 2023-08-20</small></p>
+        </div>
+        <div class="gallery-card">
+          <img src="https://imgs.search.brave.com/CgCj4ER1r855CfKzIjt6FW30oYakfzUWUXHQhW6f_i4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvc2lk/ZXdhbGstcGljdHVy/ZXMtMjAwMC14LTEx/ODItOGhlZmF5cm84/OHNyeXQwcS5qcGc" alt="Sidewalk Improvement">
+          <p>Sidewalk Improvement - Green Lane<br><small>Resolved 2023-07-12</small></p>
+        </div>
+        <div class="gallery-card">
+          <img src="https://imgs.search.brave.com/Ae9crXVJj6kFF-aVMm8aAfPt5E3XPg1p-foO1681qMI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9qb2hu/Y29ja2VyaWxsLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/NC8xMS8yMDI0MTAw/NS1qbnBhLXRyZWUt/cGxhbnRhdGlvbi1k/cml2ZS1qY2lsLWZw/ZS0zLTk4MHg1NTEu/anBn" alt="Tree Plantation">
+          <p>Tree Plantation Drive - Block A<br><small>Resolved 2023-07-01</small></p>
+        </div>
+        <div class="gallery-card">
+          <img src="https://imgs.search.brave.com/Pm1PhiPTkcfNdzfSqXSGJ_A958eHkpg20j0JFZ8WqO8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y3BzZW5lcmd5LmNv/bS9jb250ZW50L2Rh/bS9jb3Jwb3JhdGUv/ZW4vSW1hZ2VzLzM1/MHgyNDAvTEVEJTIw/TGlnaHRpbmctNzcu/anBn" alt="Streetlight Fixed">
+          <p>Streetlight Fixed - Sector 14<br><small>Resolved 2023-06-25</small></p>
+        </div>
+      </div>
+
+      <!-- Awareness -->
+      <h2 id="awareness">Civic Awareness</h2>
+      <div class="awareness">
+        <div class="awareness-card">
+          <h3>How to Report Issues</h3>
+          <p>Learn the steps to effectively report civic issues in your locality through the CivicReport app.</p>
+        </div>
+        <div class="awareness-card">
+          <h3>Waste Segregation Rules</h3>
+          <p>Understand the guidelines for segregating wet, dry, and hazardous waste for better management.</p>
+        </div>
+        <div class="awareness-card">
+          <h3>Water Conservation Tips</h3>
+          <p>Fixing leaks and using efficient appliances can help conserve water in daily life.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="display.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CivicReport Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login-card">
+    <h2>CivicReport</h2>
+    <p>Welcome Back</p>
+
+    <!-- Toggle Buttons -->
+    <div class="toggle-buttons">
+      <button id="userBtn" class="active">User Login</button>
+      <button id="adminBtn">Admin Login</button>
+    </div>
+
+    <!-- Admin ID (only for admin login) -->
+    <div class="input-group" id="adminIdGroup">
+      <input type="text" placeholder="Admin ID">
+      <i>🆔</i>
+    </div>
+
+    <!-- Email -->
+    <div class="input-group show" id="emailGroup">
+      <input type="text" placeholder="Email/Username">
+      <i>👤</i>
+    </div>
+
+    <!-- Password -->
+    <div class="input-group show" id="passwordGroup">
+      <input type="password" placeholder="Password">
+      <i>🔒</i>
+    </div>
+
+    <!-- Forgot Password -->
+    <div class="forgot">
+      <a href="#">Forgot password?</a>
+    </div>
+
+    <!-- Login Button -->
+    <button class="login-btn">Login</button>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
