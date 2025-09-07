@@ -11,9 +11,7 @@ if (uploadBox && fileInput) {
     uploadBox.classList.add("dragover");
   });
 
-  uploadBox.addEventListener("dragleave", () => {
-    uploadBox.classList.remove("dragover");
-  });
+  uploadBox.addEventListener("dragleave", () => uploadBox.classList.remove("dragover"));
 
   uploadBox.addEventListener("drop", (e) => {
     e.preventDefault();
@@ -35,13 +33,32 @@ if (uploadBox && fileInput) {
   }
 }
 
-// ===== Form Submit =====
+// ===== Form Submit & Confetti =====
 const reportForm = document.getElementById("reportForm");
 if (reportForm) {
   reportForm.addEventListener("submit", (e) => {
     e.preventDefault();
     alert("✅ Report submitted successfully!");
+    confetti();
     reportForm.reset();
     if (preview) preview.innerHTML = "";
   });
+}
+
+function confetti() {
+  for(let i=0;i<100;i++){
+    const div=document.createElement('div');
+    div.style.position='fixed';
+    div.style.width='8px';
+    div.style.height='8px';
+    div.style.background=['#1E90FF','#00CFFF','#FFD700','#FF69B4'][Math.floor(Math.random()*4)];
+    div.style.top='50%';
+    div.style.left='50%';
+    div.style.borderRadius='50%';
+    div.style.zIndex='1000';
+    div.style.opacity='0.9';
+    div.style.transform=`translate(${Math.random()*400-200}px,${Math.random()*400-200}px) rotate(${Math.random()*360}deg)`;
+    document.body.appendChild(div);
+    setTimeout(()=>div.remove(),1000+Math.random()*1000);
+  }
 }

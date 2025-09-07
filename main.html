@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <!-- Navbar -->
   <header class="navbar">
     <div class="logo">Civic<span>Report</span></div>
@@ -17,7 +18,7 @@
         <li><a href="#hero">Home</a></li>
         <li><a href="#quotes">Quotes</a></li>
         <li><a href="#how">How It Works</a></li>
-        <li><a href="#how"onclick="window.location.href='display.html'" >News</a></li>
+        <li><a href="#reports"onclick="window.location.href='display.html'">Reports</a></li>
       </ul>
     </nav>
     <div class="nav-actions">
@@ -29,20 +30,16 @@
   <!-- Hero -->
   <section class="hero" id="hero">
     <div class="hero-content">
-      <h1>Report. Resolve. Revive.</h1>
-      <p>Your voice matters. Report issues in your community and track their resolution.</p>
-      <button class="cta-btn" onclick="window.location.href='report.html'">
-        Report a Problem
-      </button>
-
-      <!-- Supporting Text -->
+      <h1><span>Re</span>port. <span>Re</span>solve. <span>Re</span>vive.</h1>
       <div class="hero-subtext">
         <h2>Together, we can build stronger communities</h2>
+         <button class="cta-btn" onclick="window.location.href='report.html'">Report a Problem</button>
         <p>
           CivicReport empowers citizens to take action, highlight problems, and
           collaborate with local authorities for faster solutions.
         </p>
       </div>
+     
 
       <!-- Stats Row -->
       <div class="stats-row">
@@ -59,39 +56,54 @@
           <p>Citizen Support</p>
         </div>
       </div>
+      <div class="abc">
+      <p>Your voice matters. Report issues in your community and track their resolution.</p></div>
+      
     </div>
   </section>
-
-
 
   <!-- How It Works -->
   <section class="how-it-works" id="how">
     <h2>How It Works</h2>
-    <p class="subtitle">Simple steps to a better community</p>
-    <div class="cards">
-      <div class="card">
-        <div class="icon">📢</div>
-        <h3>Report</h3>
-        <p>Quickly report issues like potholes, garbage, or streetlights with ease.</p>
+    <p class="subtitle">A futuristic and streamlined approach to solving civic issues together.</p>
+    <div class="timeline">
+      <div class="container left">
+        <div class="content"onclick="window.location.href='login.html'">
+          <div class="icon">👤</div>
+          <h3>Login/Sign Up</h3>
+          <p>Create your account or log in to get started.</p>
+        </div>
       </div>
-      <div class="card">
-        <div class="icon">🔍</div>
-        <h3>Track</h3>
-        <p>Follow updates in real-time and stay informed about solutions.</p>
+      <div class="container right">
+        <div class="content"onclick="window.location.href='report.html'">
+          <div class="icon">📷</div>
+          <h3>Report an Issue</h3>
+          <p>Upload a photo, specify the location, and describe the issue.</p>
+        </div>
       </div>
-      <div class="card">
-        <div class="icon">✔️</div>
-        <h3>Resolve</h3>
-        <p>Watch your neighborhood improve as problems get fixed.</p>
+      <div class="container left">
+        <div class="content"onclick="window.location.href='display.html'">
+          <div class="icon">🛠</div>
+          <h3>Admin Reviews & Updates</h3>
+          <p>Admins review the report and provide updates.</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <div class="icon">📊</div>
+          <h3>Track Progress & Resolution</h3>
+          <p>Track the progress of your report and see the resolution.</p>
+        </div>
       </div>
     </div>
   </section>
-    <!-- Quotes -->
+
+  <!-- Quotes -->
   <section class="quotes" id="quotes">
     <h2>Inspiring Quotes</h2>
     <p class="subtitle">Voices that spark change</p>
     <div class="quotes-grid">
-      <div class="quote-card">“Cleanliness is the first step toward a civilized society.”</div>
+      <div class="quote-card">"The best way to predict the future is to create it." – Abraham Lincoln</div>
       <div class="quote-card">"Never doubt that a small group of thoughtful, committed citizens can change the world." – Margaret Mead</div>
       <div class="quote-card">"Be the change that you wish to see in the world." – Mahatma Gandhi</div>
       <div class="quote-card">"Act as if what you do makes a difference. It does." – William James</div>
@@ -106,5 +118,6 @@
   <footer>
     <p>© 2025 CivicReport. Built for a better community 🌍</p>
   </footer>
+
 </body>
 </html>

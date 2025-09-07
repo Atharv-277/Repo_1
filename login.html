@@ -4,9 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CivicReport Login</title>
-  <link rel="stylesheet" href="login.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">  <!-- Navbar + Theme -->
+  <link rel="stylesheet" href="login.css"> <!-- Login Card -->
 </head>
 <body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Civic<span>Report</span></div>
+    <nav>
+      <ul>
+        <li><a href="main.html">Home</a></li>
+        <li><a href="display.html">Reports</a></li>
+        <li><a href="report.html">Report a Problem</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <div class="toggle-theme" id="themeToggle">🌙</div>
+    </div>
+  </header>
+
+  <!-- Login Card -->
   <div class="login-card">
     <h2>CivicReport</h2>
     <p>Welcome Back</p>
@@ -44,6 +63,7 @@
     <button class="login-btn">Login</button>
   </div>
 
-  <script src="login.js"></script>
+  <script src="main.js" defer></script>   <!-- Theme toggle -->
+  <script src="login.js" defer></script>  <!-- Toggle logic -->
 </body>
 </html>

@@ -4,27 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Report a Problem</title>
-  <link rel="stylesheet" href="main.css"> <!-- navbar + theme -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="report.css"> <!-- form styles -->
-  <script defer src="main.js"></script> <!-- theme toggle -->
-  <script defer src="report.js"></script> <!-- form handling -->
+  <link rel="stylesheet" href="main.css">  <!-- Navbar & Theme -->
+  <link rel="stylesheet" href="report.css"> <!-- Report Form & Animations -->
 </head>
 <body>
-  <!-- Same Navbar -->
+
+  <!-- Floating Background -->
+  <div class="floating-bg">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <!-- Navbar -->
   <header class="navbar">
     <div class="logo">Civic<span>Report</span></div>
     <nav>
       <ul>
-        <li><a href="index.html#hero">Home</a></li>
-        <li><a href="index.html#quotes">Quotes</a></li>
-        <li><a href="index.html#how">How It Works</a></li>
-        <li><a href="index.html#how">Reports</a></li>
+        <li><a href="main.html">Home</a></li>
+        <li><a href="display.html">Reports</a></li>
       </ul>
     </nav>
     <div class="nav-actions">
-      <button class="login-btn">Login</button>
+      <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
       <div class="toggle-theme" id="themeToggle">🌙</div>
     </div>
   </header>
@@ -69,5 +70,9 @@
   <footer>
     <p>© 2025 CivicReport. Built for a better community 🌍</p>
   </footer>
+
+  <!-- JS Files -->
+  <script src="main.js" defer></script>    <!-- Theme toggle -->
+  <script src="report.js" defer></script>  <!-- Form & animations -->
 </body>
 </html>

@@ -8,11 +8,11 @@ adminIdGroup.style.display = "none";
 userBtn.addEventListener("click", () => {
   userBtn.classList.add("active");
   adminBtn.classList.remove("active");
-  adminIdGroup.style.display = "none"; // hide admin ID
+  adminIdGroup.style.display = "none";
 });
 
 adminBtn.addEventListener("click", () => {
   adminBtn.classList.add("active");
   userBtn.classList.remove("active");
-  adminIdGroup.style.display = "block"; // show admin ID
+  adminIdGroup.style.display = "block";
 });
