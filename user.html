@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Users – Snap2Fix</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="user.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>Snap2Fix</h2>
+    <nav>
+      <a href="dashboard.html">Manage Issues</a>
+      
+      <a href="user.html" class="active">Manage Users</a>
+      <a href="settings.html">Settings</a>
+      <a href="#">Logout</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="container">
+    <header>
+      <h1>Manage Users</h1>
+      <div class="filters">
+        <input type="text" placeholder="Search by name or email" id="search-input">
+        <select id="status-filter">
+          <option value="all">All Statuses</option>
+          <option value="active">Active</option>
+          <option value="blocked">Blocked</option>
+        </select>
+      </div>
+    </header>
+
+    <!-- Insights -->
+    <section class="insights">
+      <h2>Insights</h2>
+      <div class="insights-cards">
+        <div class="insight-card">
+          <div class="insight-title">Most Active Area</div>
+          <div class="insight-value">Downtown</div>
+        </div>
+        <div class="insight-card">
+          <div class="insight-title">New Users This Month</div>
+          <div class="insight-value">76</div>
+        </div>
+        <div class="insight-card">
+          <div class="insight-title">Average Issues per User</div>
+          <div class="insight-value">4.2</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Reporters Chart -->
+    <section class="chart-section">
+      <h2>Top Reporters</h2>
+      <canvas id="topReportersChart" height="120"></canvas>
+    </section>
+
+    <!-- User Table -->
+    <section class="user-table-section">
+      <h2>User List</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Reported Issues</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="users-table-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Recent Activity -->
+    <section class="activity-section">
+      <h2>Recent Activity</h2>
+      <ul class="activity-feed" id="activity-feed"></ul>
+    </section>
+
+    <!-- Pagination -->
+    <div class="pagination">
+      <span id="pagination-info">Showing 1 to 4 of 1,254 results</span>
+      <div class="page-buttons">
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <span>...</span>
+        <button class="page-btn">10</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Snackbar -->
+  <div class="snackbar" id="snackbar">User status updated!</div>
+
+  <script src="user.js"></script>
+</body>
+</html>

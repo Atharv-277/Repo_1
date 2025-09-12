@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard – Snap2Fix</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>Snap2Fix</h2>
+    <nav>
+      <a href="dashboard.html" class="active">Manage Issues</a>
+      <a href="user.html">Manage Users</a>
+      <a href="#">Settings</a>
+      <a href="#">Logout</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Header -->
+    <header class="header">
+      <h1>Manage Issues</h1>
+      <div class="profile">
+        <span class="bell">🔔</span>
+        <img src="https://imgs.search.brave.com/Em8twwM0LGyqDAjI-JGTarFkOhTfL_KBIegyS-7v3Lk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/dmVjdG9yc3RvY2su/Y29tL2kvNTAwcC81/MC85Ny9pY29uLW9m/LWJ1c2luZXNzbWFu/LWlzb2xhdGVkLW9u/LXdoaXRlLXZlY3Rv/ci01NzU1MDk3Lmpw/Zw" alt="Admin Avatar">
+        <span>Admin</span>
+      </div>
+    </header>
+
+    <!-- Stats Cards -->
+    <section class="stats">
+      <div class="card">
+        <h3>Total Issues</h3>
+        <p id="totalIssues">1,248</p>
+      </div>
+      <div class="card">
+        <h3>Active Issues</h3>
+        <p id="activeIssues">320</p>
+      </div>
+      <div class="card">
+        <h3>Resolved Issues</h3>
+        <p id="resolvedIssues">860</p>
+      </div>
+      <div class="card">
+        <h3>Pending Issues</h3>
+        <p id="pendingIssues">68</p>
+      </div>
+    </section>
+
+    <!-- Bar Graph -->
+    <section class="graph-section">
+      <h2>📊 Issues Reported by Area</h2>
+      <canvas id="areaChart"></canvas>
+    </section>
+
+    <!-- Insights -->
+    <section class="insights">
+      <div class="insight-card">
+        <h2>📌 Issues by Category</h2>
+        <canvas id="categoryChart"></canvas>
+      </div>
+      <div class="insight-card">
+        <h2>⚡ Resolution Performance</h2>
+        <canvas id="resolutionChart"></canvas>
+        <p>Average Resolution Time: <b>5.2 days</b></p>
+      </div>
+    </section>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

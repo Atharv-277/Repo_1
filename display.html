@@ -3,111 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CivicReport</title>
+  <title>CivicReport - Snap2Fix</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="display.css">
+
+  <!-- Leaflet.js -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" 
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 <body>
   <!-- Navbar -->
   <header class="navbar">
-    <div class="logo">Civic<span>Report</span></div>
+    <div class="logo">Snap<span>2</span>Fix</div>
     <nav>
       <ul>
-        <li><a href="#">Notices</a></li>
-        <li><a href="#">Media</a></li>
+        <li><a href="main.html">Home</a></li>
         <li><a href="#" id="awareness-link">Awareness</a></li>
       </ul>
     </nav>
     <div class="profile">👩</div>
   </header>
 
-  <!-- Layout -->
   <main class="container">
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <ul>
-        <li class="active">Notices</li>
-        <li>Media</li>
-        <li>Awareness</li>
-      </ul>
-    </aside>
-
-    <!-- Main Content -->
     <section class="content">
       <!-- Featured Notices -->
       <h2>Featured Notices</h2>
       <div class="notices">
-        <div class="notice-card">
+        <div class="card notice-card">
           <div class="notice-info">
             <h3>💧 Water Leak in Sector 15</h3>
-            <p>A major water pipe has burst, leading to waterlogging. Residents are advised to store water. Repair work is underway.</p>
+            <p>Major pipe burst. Residents advised to store water.</p>
             <small>Reported 2023-08-15 • <span class="status active">Active</span></small>
           </div>
-          <img src="https://imgs.search.brave.com/CoR4SBYPv14rjcf8-DWjBNTUA1PzT4DpooeoPqnP_Q0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzEyLzkyLzg1LzE5/LzM2MF9GXzEyOTI4/NTE5MDdfUXY1UzRQ/N0hIalZ4VGlPSUNO/QWdOcEZvWmtMYzI2/TFAuanBn" alt="Water Leak">
+          <img src="https://imgs.search.brave.com/IXn5mxSmQPgV5Qtu_UTDCUpyWBcYaIcdrEfatPIVjBY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9idXJz/dC13YXRlci1tYWlu/LWNhcnMtcXVldWlu/Zy1hcm91bmQtcm9h/ZC1jbG9zZWQtYm9s/bGFyZHMtZHVlLXRv/LWRhbWFnZS11cmJh/bi1hcmVhLXN1bm55/LWRheS0xNTYxNDEz/OTUuanBn" alt="Water Leak">
         </div>
-
-        <div class="notice-card">
+        <div class="card notice-card">
           <div class="notice-info">
             <h3>⚠️ Road Damage on Main Street</h3>
-            <p>The heavy rains caused potholes on Main Street. The road has been repaired and is now safe for traffic.</p>
+            <p>Heavy rains caused potholes. Now repaired.</p>
             <small>Reported 2023-07-22 • <span class="status resolved">Resolved</span></small>
           </div>
           <img src="https://imgs.search.brave.com/lQ01pmRcjyMouaRO373HAJ4vrP7mmnRi1MeKrx8SduE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi93YXRl/ci1kYW1hZ2VkLXBv/dGhvbGVzLXJvYWQt/cGFydC1yb2Fkcy1w/aXRzLTc5OTAxODM0/LmpwZw" alt="Road Damage">
         </div>
+      </div>
 
-        <div class="notice-card">
-          <div class="notice-info">
-            <h3>💡 Streetlight Outage in Block C</h3>
-            <p>Multiple streetlights are non-functional, causing safety concerns. The issue is being looked into.</p>
-            <small>Reported 2023-06-10 • <span class="status active">Active</span></small>
-          </div>
-          <img src="https://imgs.search.brave.com/rhnSG3XBqh6tAG3om4LUtK_B0uDfob89fu_cWh7Yiz0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNjU1/Mjc4MjQ4L3Bob3Rv/L2Jyb2tlbi1zdHJl/ZXRsaWdodC5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9YlJV/TnhDMGRTU0thTE1T/R1lYam90dVNsOVZq/SFJGWnlXMTVMdGJL/aGx4MD0" alt="Streetlight Outage">
-        </div>
+      <!-- Quick Stats -->
+      <h2>Quick Stats</h2>
+      <div class="stats">
+        <div class="card"><h3>1,245</h3><p>Issues Reported</p></div>
+        <div class="card"><h3>980</h3><p>Resolved</p></div>
+        <div class="card"><h3>265</h3><p>Active</p></div>
+        <div class="card"><h3>5,320</h3><p>Community Votes</p></div>
       </div>
 
       <!-- Gallery -->
       <h2>Improvement Gallery</h2>
       <div class="gallery">
-        <div class="gallery-card">
-          <img src="https://imgs.search.brave.com/2AVq-LAkC1mUDPw_ZOT5teIQw0o2p_r_9WnhvMWW4yU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jb21t/b253ZWFsdGhwYXZp/bmcubmV0L3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIxLzAzL3Bv/dGhvbGUtcmVwYWly/LWxvdWlzdmlsbGUu/anBn" alt="Pothole Repair">
-          <p>Pothole Repair - Sector 10<br><small>Resolved 2023-09-05</small></p>
-        </div>
-        <div class="gallery-card">
-          <img src="https://imgs.search.brave.com/RoSSH7QskK9CWY43drTdyRzSfZDAig-h74QZfMvcjsg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTA3/NzE1NjI5MC9waG90/by9wZW9wbGUtY2xl/YW5pbmctdGhlLWVu/dmlyb25tZW50Lmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1Y/blo3RGRaOVhvOHI0/cmZDV2ljQVhuU3JG/M1FxR201OE1GTWlk/TS0yejlBPQ" alt="Garbage Cleanup">
-          <p>Garbage Cleanup - Park Avenue<br><small>Resolved 2023-08-20</small></p>
-        </div>
-        <div class="gallery-card">
-          <img src="https://imgs.search.brave.com/CgCj4ER1r855CfKzIjt6FW30oYakfzUWUXHQhW6f_i4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGQvc2lk/ZXdhbGstcGljdHVy/ZXMtMjAwMC14LTEx/ODItOGhlZmF5cm84/OHNyeXQwcS5qcGc" alt="Sidewalk Improvement">
-          <p>Sidewalk Improvement - Green Lane<br><small>Resolved 2023-07-12</small></p>
-        </div>
-        <div class="gallery-card">
-          <img src="https://imgs.search.brave.com/Ae9crXVJj6kFF-aVMm8aAfPt5E3XPg1p-foO1681qMI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9qb2hu/Y29ja2VyaWxsLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/NC8xMS8yMDI0MTAw/NS1qbnBhLXRyZWUt/cGxhbnRhdGlvbi1k/cml2ZS1qY2lsLWZw/ZS0zLTk4MHg1NTEu/anBn" alt="Tree Plantation">
-          <p>Tree Plantation Drive - Block A<br><small>Resolved 2023-07-01</small></p>
-        </div>
-        <div class="gallery-card">
-          <img src="https://imgs.search.brave.com/Pm1PhiPTkcfNdzfSqXSGJ_A958eHkpg20j0JFZ8WqO8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y3BzZW5lcmd5LmNv/bS9jb250ZW50L2Rh/bS9jb3Jwb3JhdGUv/ZW4vSW1hZ2VzLzM1/MHgyNDAvTEVEJTIw/TGlnaHRpbmctNzcu/anBn" alt="Streetlight Fixed">
-          <p>Streetlight Fixed - Sector 14<br><small>Resolved 2023-06-25</small></p>
-        </div>
+        <div class="card gallery-card"><img src="https://imgs.search.brave.com/Q3gtR_6btxZcsqeOV0z53_0aS39vgRwz4og_EWQy3Ao/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ldmVy/bGluZWNvYXRpbmdz/LmNvbS91cy93cC1j/b250ZW50L3VwbG9h/ZHMvc2l0ZXMvMi8y/MDIzLzA4L3BvdGhv/bGUtYXNwaGFsdC1y/ZXBhaXJzLWJ5LWV2/ZXJsaW5lLTU4OXgz/MzEuanBn" alt=""><p>Pothole Repair - Sector 10</p></div>
+        <div class="card gallery-card"><img src="https://imgs.search.brave.com/ajMzAlYofN7m2J5MA6jtB1aNIT4bu50kOkKmoyd2vqs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE2/NDQ5Nzg3Ny9waG90/by9tYW4tY2xlYW5p/bmctYmVhY2guanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPVpQ/a3pBbmJwUi11ZTUt/N2h6MnJnd01uc0xu/eFJvdE5IamVYTmE2/UGZPSDA9" alt=""><p>Garbage Cleanup - Park Avenue</p></div>
+        <div class="card gallery-card"><img src="https://imgs.search.brave.com/MTWST2smI443nm6EDNjvUaFczou7xKysOtnc9h0PWDw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y2luY2lubmF0aS1v/aC5nb3Yvc2l0ZXMv/ZG90ZS9hc3NldHMv/RmlsZS9TaWRld2Fs/a3MvU2lkZXdhbGtz/X1NsaWRlc2hvdzA4/LmpwZw" alt=""><p>Sidewalk Improvement - Green Lane</p></div>
+      </div>
+
+      <!-- Community Highlights -->
+      <h2>Community Highlights</h2>
+      <div class="community">
+        <div class="card"><h3>🌱 Tree Plantation Drive</h3><p>Volunteers planted 500 trees across Block A.</p></div>
+        <div class="card"><h3>🏫 School Clean-up</h3><p>Students participated in a campus cleaning initiative.</p></div>
+      </div>
+
+      <!-- Volunteer Opportunities -->
+      <h2>Volunteer Opportunities</h2>
+      <div class="volunteer">
+        <div class="card"><h3>🚮 Neighborhood Cleanup</h3><p>Join us this weekend to clean up Sector 8 Park.</p></div>
+        <div class="card"><h3>💡 Awareness Drive</h3><p>Spread information about waste segregation rules.</p></div>
+      </div>
+
+      <!-- Impact Tracker -->
+      <h2>Impact Tracker</h2>
+      <div class="map-section">
+        <h3>Live Map of Civic Issues</h3>
+        <div id="map"></div>
       </div>
 
       <!-- Awareness -->
       <h2 id="awareness">Civic Awareness</h2>
       <div class="awareness">
-        <div class="awareness-card">
-          <h3>How to Report Issues</h3>
-          <p>Learn the steps to effectively report civic issues in your locality through the CivicReport app.</p>
-        </div>
-        <div class="awareness-card">
-          <h3>Waste Segregation Rules</h3>
-          <p>Understand the guidelines for segregating wet, dry, and hazardous waste for better management.</p>
-        </div>
-        <div class="awareness-card">
-          <h3>Water Conservation Tips</h3>
-          <p>Fixing leaks and using efficient appliances can help conserve water in daily life.</p>
-        </div>
+        <div class="card"><h3>How to Report Issues</h3><p>Steps to effectively report civic issues.</p></div>
+        <div class="card"><h3>Waste Segregation Rules</h3><p>Understand wet, dry & hazardous waste management.</p></div>
+        <div class="card"><h3>Water Conservation Tips</h3><p>Fixing leaks and using efficient appliances saves water.</p></div>
       </div>
     </section>
   </main>
 
+  <!-- JS -->
   <script src="display.js"></script>
 </body>
 </html>

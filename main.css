@@ -67,15 +67,19 @@ body {
 .hero-subtext h2 {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
+  margin-bottom: 3rem;
   color: #222;
 }
 .hero-subtext p {
   color: #555;
   font-size: 1.1rem;
 }
+.hero-subtext button{
+  margin-bottom: 1.5rem;
+}
 body.dark .hero-subtext h2 { color: #eee; }
 body.dark .hero-subtext p { color: #ccc; }
+.hero-content span { color: #156fc9; }
 
 /* Stats Row */
 .stats-row {

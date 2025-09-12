@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Settings – Snap2Fix</title>
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>Snap2Fix</h2>
+    <nav>
+      <a href="dashboard.html">Manage Issues</a>
+      <a href="user.html">Manage Users</a>
+      <a href="settings.html" class="active">Settings</a>
+      <a href="#">Logout</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <header class="header">
+      <h1>Settings</h1>
+      <div class="profile">
+        <span class="bell">🔔</span>
+        <img src="https://imgs.search.brave.com/Em8twwM0LGyqDAjI-JGTarFkOhTfL_KBIegyS-7v3Lk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/dmVjdG9yc3RvY2su/Y29tL2kvNTAwcC81/MC85Ny9pY29uLW9m/LWJ1c2luZXNzbWFu/LWlzb2xhdGVkLW9u/LXdoaXRlLXZlY3Rv/ci01NzU1MDk3Lmpw/Zw" alt="Admin Avatar">
+        <span>Admin</span>
+      </div>
+    </header>
+
+    <div class="container">
+      <!-- Profile Settings -->
+      <section class="section">
+        <h2>Profile Settings</h2>
+        <div class="card">
+          <label for="adminID">Admin ID</label>
+          <input type="text" id="adminID" value="admin123">
+          <label for="adminName">Name</label>
+          <input type="text" id="adminName" value="Admin Name">
+          <label for="adminEmail">Email</label>
+          <input type="email" id="adminEmail" value="admin@snap2fix.com">
+          <button onclick="saveProfile()">Save Changes</button>
+        </div>
+      </section>
+
+      <!-- Password Settings -->
+      <section class="section">
+        <h2>Password Settings</h2>
+        <button class="toggle-password-btn" onclick="togglePasswordCard()">Change Password</button>
+        <div class="card password-card" style="display: none;">
+          <label for="oldPassword">Old Password</label>
+          <input type="password" id="oldPassword">
+          <label for="newPassword">New Password</label>
+          <input type="password" id="newPassword">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" id="confirmPassword">
+          <button onclick="updatePassword()">Update Password</button>
+        </div>
+      </section>
+
+      <!-- Security Settings -->
+      <section class="section">
+        <h2>Security</h2>
+        <div class="card toggle-card">
+          <span>Two-Factor Authentication</span>
+          <label class="switch">
+            <input type="checkbox" id="twoFactor">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </section>
+
+      <!-- Notification Settings -->
+      <section class="section">
+        <h2>Notification Settings</h2>
+        <div class="card toggle-card">
+          <span>Email Notifications</span>
+          <label class="switch">
+            <input type="checkbox" id="emailNotif" checked>
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="card toggle-card">
+          <span>SMS Notifications</span>
+          <label class="switch">
+            <input type="checkbox" id="smsNotif">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </section>
+      <!-- Login Activity -->
+    <section class="section">
+      <h2>Login Activity</h2>
+      <div class="card">
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>IP Address</th>
+              <th>Device</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2024-03-15 14:30</td>
+              <td>192.168.1.100</td>
+              <td>Desktop - Chrome</td>
+            </tr>
+            <tr>
+              <td>2024-03-14 22:15</td>
+              <td>172.217.160.142</td>
+              <td>Mobile - Safari</td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="logout-all">Log Out from All Sessions</button>
+      </div>
+    </section>
+
+      <!-- Account Actions -->
+      <section class="section">
+        <h2>Account Actions</h2>
+        <div class="card">
+          <button class="delete-account" onclick="deleteAccount()">Delete Account</button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="settings.js"></script>
+</body>
+</html>
